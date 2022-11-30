@@ -1,2 +1,2 @@
-[build]
-  publish = "" 
+[build] = 
+  CI= npm run build
