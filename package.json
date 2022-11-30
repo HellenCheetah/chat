@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Chat for yandex practikum",
   "main": "index.js",
+  "targets": {
+    "main": false
+  },
   "scripts": {
-    "start": "parcel",
     "dev": "parcel index.hbs",
     "build": "parcel build index.hbs"
   },
