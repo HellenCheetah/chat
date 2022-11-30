@@ -2,7 +2,7 @@
   "name": "chat",
   "version": "1.0.0",
   "description": "Chat for yandex practikum",
-  "main": "index.js",
+  "main": "index.hbs",
   "scripts": {
     "dev": "parcel index.hbs",
     "build": "parcel build index.hbs"
