@@ -1,0 +1,23 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Chat for yandex practikum",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.hbs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HellenCheetah/chat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HellenCheetah/chat/issues"
+  },
+  "homepage": "https://github.com/HellenCheetah/chat#readme",
+  "devDependencies": {
+    "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "parcel": "^2.8.0"
+  }
+}
