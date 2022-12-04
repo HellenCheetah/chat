@@ -1,4 +1,60 @@
 :root {
-
-
+  --background-color: #F5F5F5;
+  --button-color: #62D767;
+  --error-color: #FF0000;
+  --link-color: #0D3CB4;
 }
+
+body {
+  background-color: var(--background-color);
+  min-height: 100vh;
+  font-family: Inter, serif;
+  width: 100%;
+  min-width: 320px;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.link {
+  color: var(--link-color);
+}
+
+.form-input {
+  input[type="text"],
+  input[type="password"],
+  input[type="tel"] {
+    width: 100%;
+    border: none;
+    box-shadow: 0.1px 0.1px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 17px 40px;
+    font-size: 20px;
+    height: 62px;
+    outline: none;
+    margin-bottom: 15px;
+  }
+
+  input::placeholder {
+    color: #9CA3AF;
+  }
+}
+
