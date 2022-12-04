@@ -1,14 +1,18 @@
 {
   "name": "chat",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.16.0"
+  },
   "description": "Chat for yandex practikum",
   "main": "index.js",
   "targets": {
     "main": false
   },
   "scripts": {
+    "build": "parcel build index.hbs",
     "dev": "parcel index.hbs",
-    "build": "parcel build index.hbs"
+    "start": "node server/app.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +26,10 @@
   "homepage": "https://github.com/HellenCheetah/chat#readme",
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
-    "parcel": "^2.8.0"
-  }
+    "@parcel/transformer-sass": "^2.8.0",
+    "express": "^4.18.2",
+    "parcel": "^2.8.0",
+    "sass": "^1.56.1"
+  },
+  "dependencies": {}
 }
