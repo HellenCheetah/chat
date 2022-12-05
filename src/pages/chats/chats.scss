@@ -20,18 +20,21 @@
     margin-right: 30px;
   }
 
-  &__right {
+  &__main {
     height: 100%;
     flex-grow: 1;
   }
 
   &-search {
-
+    height: 80px;
+    padding: 43px 17px 17px 17px;
+    border-bottom: 1px solid #5F5F5F;
   }
 
   &-list {
     margin: 0;
     padding: 0;
     list-style-type: none;
+
   }
 }

@@ -1,3 +1,7 @@
+---
+chats: [ {id: 1, name: 'Ivan Ivanov',}, {id: 2, name: 'Petr Petrov'} ]
+---
+
 <html>
     <head>
     <link rel="stylesheet" href="./chats.scss">
@@ -8,18 +12,32 @@
                 <div class="chats-wrapper">
                     <div class="chats__left chats-block">
                        <div class="chats-search">
+                           <div class="form-input">
+                               <input type="text" placeholder="Search" >
+                           </div>
 
                        </div>
 
                         <ul class="chats-list">
                             <li>
-                                {{> chat-list-item }}
-
+                                {{#each chats}}
+                                    {{> chat-list-item }}
+                                {{/each}}
                             </li>
                         </ul>
                     </div>
-                    <div class="chats__right chats-block">
+                    <div class="chats__main chats-block">
+                        <div class="chats__main-head">
 
+                        </div>
+
+                        <div class="chats__main-chat">
+
+                        </div>
+
+                        <div class="chats__main-textarea">
+
+                        </div>
                     </div>
                 </div>
             </div>
