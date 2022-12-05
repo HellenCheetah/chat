@@ -1,0 +1,44 @@
+@import "./../../assets/index.scss";
+
+.registration {
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+    width: 370px;
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 58px;
+    }
+
+    &__items {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 47px;
+
+      &-wrapper {
+        margin-bottom: 50px;
+      }
+
+      &-input {
+
+      }
+
+      .btn {
+        height: 62px;
+        width: 190px;
+        background: var(--button-color);
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+
+    &__text {
+
+    }
+  }
+}

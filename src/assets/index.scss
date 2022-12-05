@@ -19,15 +19,17 @@ body {
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1200px;
   height: 100vh;
   margin: 0 auto;
-  width: 100%;
   padding-left: 75px;
   padding-right: 75px;
+
+  container--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+  }
 }
 
 h1, h2, h3 {
