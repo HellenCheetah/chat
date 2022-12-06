@@ -1,8 +1,10 @@
 @import "../styles/partials/button";
 @import "../styles/partials/input";
 @import "../styles/partials/list-item";
+@import "../styles/partials/textarea";
+@import "../styles/partials/message";
+@import "../styles/partials/messages-list";
 @import "./vars";
-
 :root {
   --background-color: $background-color;
   --button-color: $green;
