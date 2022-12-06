@@ -1,23 +1,24 @@
-<html>
-    <head>
-    <link rel="stylesheet" href="./login.scss">
+---
+styles: './login.scss'
+btn-text: 'Sign in'
+---
 
-    </head>
-    <body>
+{{#extend "main"}}
+    {{#content "main"}}
         <div class="login">
-            <div class="container">
+            <div class="container container--auth">
                 <div class="login-form">
                     <h1 class="login-form__title">Sign in</h1>
 
                     <form class="login-form__items">
                         <div class="login-form__items-wrapper">
-                             <div class="form-input">
-                                 <input type="text" class="login__form-items-input" placeholder="Email" >
-                             </div>
+                            <div class="form-control">
+                                <input type="text" class="login__form-items-input" placeholder="Email" >
+                            </div>
 
-                             <div class="form-input">
-                                  <input type="password" class="form-input login__form-items-input" placeholder="Password" >
-                             </div>
+                            <div class="form-control">
+                                <input type="password" class="form-input login__form-items-input" placeholder="Password" >
+                            </div>
                         </div>
 
 
@@ -30,5 +31,5 @@
                 </div
             </div>
         </div>
-    </body>
-</html>
+    {{/content}}
+{{/extend}}

@@ -1,7 +1,6 @@
-@import "./../../assets/index.scss";
+@import "src/styles/main";
 
 .registration {
-
   &-form {
     display: flex;
     flex-direction: column;
@@ -22,23 +21,10 @@
         margin-bottom: 50px;
       }
 
-      &-input {
-
-      }
-
       .btn {
         height: 62px;
         width: 190px;
-        background: var(--button-color);
-        border: none;
-        border-radius: 10px;
-        font-size: 16px;
-        font-weight: 600;
       }
-    }
-
-    &__text {
-
     }
   }
 }

@@ -1,4 +1,4 @@
-@import "./../../assets/index.scss";
+@import "src/styles/main";
 
 .chats {
   padding: 100px 0;
@@ -35,6 +35,5 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-
   }
 }

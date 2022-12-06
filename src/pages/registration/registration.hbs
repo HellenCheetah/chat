@@ -1,35 +1,36 @@
-<html>
-    <head>
-    <link rel="stylesheet" href="./registration.scss">
+---
+styles: './registration.scss'
+btn-text: 'Sign up'
 
-    </head>
-    <body>
+---
+
+{{#extend "main"}}
+    {{#content "main"}}
         <div class="registration">
-            <div class="container">
+            <div class="container container--auth">
                 <div class="registration-form">
                     <h1 class="registration-form__title">Sign up</h1>
 
                     <form class="registration-form__items">
                         <div class="registration-form__items-wrapper">
-                             <div class="form-input">
-                                 <input type="text" class="registration__form-items-input" placeholder="Firstname" >
-                             </div>
-                             <div class="form-input">
-                                  <input type="text" class="form-input registration__form-items-input" placeholder="Lastname" >
-                             </div>
-                               <div class="form-input">
-                                   <input type="text" class="form-input registration__form-items-input" placeholder="Login" >
-                               </div>
-                              <div class="form-input">
-                                    <input type="text" class="form-input registration__form-items-input" placeholder="Email" >
-                              </div>
-                              <div class="form-input">
-                                     <input type="password" class="form-input registration__form-items-input" placeholder="Password" >
-                              </div>
+                            <div class="form-control">
+                                <input type="text" class="registration__form-items-input" placeholder="Firstname" >
+                            </div>
+                            <div class="form-control">
+                                <input type="text" class="form-control registration__form-items-input" placeholder="Lastname" >
+                            </div>
+                            <div class="form-control">
+                                <input type="text" class="form-control registration__form-items-input" placeholder="Login" >
+                            </div>
+                            <div class="form-control">
+                                <input type="text" class="form-control registration__form-items-input" placeholder="Email" >
+                            </div>
+                            <div class="form-control">
+                                <input type="password" class="form-control registration__form-items-input" placeholder="Password" >
+                            </div>
                         </div>
 
-
-                        {{> button btn-text="Sign up" }}
+                        {{> button }}
                     </form>
 
                     <div class="registration-form__items-text">
@@ -38,5 +39,6 @@
                 </div
             </div>
         </div>
-    </body>
-</html>
+    {{/content}}
+{{/extend}}
+
