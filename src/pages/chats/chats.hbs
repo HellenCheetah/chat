@@ -1,21 +1,17 @@
 ---
 styles: './chats.scss'
-chats: [ {id: 1, name: 'Ivan Ivanov',}, {id: 2, name: 'Petr Petrov'} ]
+chats: [ {name: 'Ivan Ivanov'}, {name: 'Petr Petrov'} ]
 ---
 {{#extend "main"}}
     {{#content "main"}}
         <div class="chats">
             <div class="container">
                 <div class="chats-wrapper">
-                    <div class="chats__left chats-block">
+                    <div class="chats__sidebar chats-block">
                         <div class="chats-search">
-                            <div class="form-input">
-                                <input type="text" placeholder="Search">
-                            </div>
-
                         </div>
 
-                        <ul class="chats-list">
+                        <ul class="chats__sidebar-list">
                             <li>
                                 {{#each chats}}
                                     {{> list-item this }}
@@ -23,6 +19,7 @@ chats: [ {id: 1, name: 'Ivan Ivanov',}, {id: 2, name: 'Petr Petrov'} ]
                             </li>
                         </ul>
                     </div>
+
                     <div class="chats__main chats-block">
                         <div class="chats__main-head">
 

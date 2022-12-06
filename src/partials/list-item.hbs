@@ -4,8 +4,9 @@
     </div>
 
     <div class="list-item__text">
-        Ivan Ivanov
+        {{ this.name }}
     </div>
-
-    <span class="list-item__time">12:12</span>
+    {{#if this.show-unread}}
+        <span class="list-item__unread"></span>
+    {{/if}}
 </div>

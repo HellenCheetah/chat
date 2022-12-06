@@ -14,10 +14,16 @@
     border-radius: 12px;
   }
 
-  &__left {
+  &__sidebar {
     flex: 0 0 360px;
     height: 100%;
     margin-right: 30px;
+
+    &-list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
   }
 
   &__main {
@@ -29,11 +35,5 @@
     height: 80px;
     padding: 43px 17px 17px 17px;
     border-bottom: 1px solid #5F5F5F;
-  }
-
-  &-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
   }
 }

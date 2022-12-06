@@ -1,9 +1,11 @@
 @import "./../vars";
 
 .list-item {
+  position: relative;
   display: flex;
+  align-items: center;
+  height: 60px;
   padding: 10px 18px;
-  height: 80px;
   border-bottom: 1px solid $border-color;
 
   &__image {
@@ -17,10 +19,14 @@
   &__text {
     max-width: 170px;
     font-weight: 600;
-    margin-bottom: 10px;
   }
 
-  &__time {
-
+  &__unread {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 30px;
+    border-radius: 50%;
+    background-color: $link-color;
   }
 }
